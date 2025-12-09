@@ -13,6 +13,11 @@ function easyProblem1(clientLevel, age) {
     // TODO: Write your code here
     // Check if clientLevel is "Platinum" AND age is 21
     // Return "can access" if both are true, otherwise "go home"
+    if (clientLevel === "Platinum" && age === 21) {
+        return "can access";
+    } else {
+        return "go home";
+    }
 }
 
 // Test your code:
@@ -29,6 +34,11 @@ function easyProblem2(clientLevel, age) {
     // TODO: Write your code here
     // Check if age is 21 AND clientLevel is NOT "Platinum"
     // Return "can sign in" if true, otherwise "go home"
+    if (age === 21 && clientLevel !== "Platinum") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
 }
 
 // Test your code:
@@ -47,6 +57,13 @@ function mediumProblem(clientLevel, age) {
     // 1. clientLevel === "Platinum" && age === 21 → "can access"
     // 2. age === 21 && clientLevel !== "Platinum" → "can sign in"
     // 3. All other cases → "go home"
+    if (clientLevel === "Platinum" && age === 21) {
+        return "can access";
+    } else if (age === 21 && clientLevel !== "Platinum") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
 }
 
 // Test your code:
@@ -76,6 +93,16 @@ function hardProblem(clientLevel, age) {
     // }
     //
     // Think: Why do we check age first? What happens if age is not 21?
+    if (age === 21) {
+        if (clientLevel === "Platinum") {
+            return "can access";
+        } else {
+            return "can sign in";
+        }
+    } else {
+        return "go home";
+
+    }
 }
 
 // Test your code:
